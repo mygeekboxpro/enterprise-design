@@ -151,7 +151,7 @@ class EventStore:
                 aggregate_id=row[2],
                 event_type=row[3],
                 version=row[4],
-                data=json.loads(row[5]),  # Parse JSON to dict
+                data=row[5],  # json.loads(row[5]),  # Parse JSON to dict
                 timestamp=row[6]
             )
             events.append(event)
