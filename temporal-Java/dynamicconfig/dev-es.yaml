@@ -1,0 +1,6 @@
+# Required by Temporal server when using Elasticsearch.
+# Do not modify unless you know what you're changing.
+
+system.advancedVisibilityWritingMode:
+  - value: "dual"
+    constraints: {}
